@@ -1,18 +1,30 @@
 /* Global settings */
 
-body, html {
+html {
     height: 100%;
     width: 100%;
-    margin: 0; /* No borders */
+    margin: 0;
     padding: 0;
 }
 
+body {
+    border: 2px solid #f0bf6c;
+    padding: 5px;
+}
+
+h1 {
+    padding: 10px;
+}
+
+p {
+    padding: 30px;
+}
 
 /* Top navigation settings */
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #2a2d30;
     overflow: hidden;
 }
 
@@ -34,15 +46,26 @@ body, html {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: black;
-    color: white;
+    background-color: #ddd;
+    color: black;
 }
 
 
 /* Hero image and text settings */
 
+/*.hero_section {
+    position: fixed;
+}*/
+
+#hero-image {
+    position: fixed;
+    top: 150px;
+    left: 500px;
+    image-orientation: flip;
+}
+
 /* Hero image settings */
-.hero-image {
+/*.hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero_image.jpg");
     height: 50%;
     width: 100%;
@@ -50,9 +73,10 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+}*/
 
 /* Hero text settings */
+/*
 .hero-text {
     text-align: center;
     position: absolute;
@@ -60,4 +84,4 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-}
+}*/
