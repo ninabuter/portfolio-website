@@ -55,9 +55,12 @@ p {
 
 /* Hero image */
 #hero-image {
-    position: fixed;
+/*    position: fixed;
     top: 150px;
-    left: 500px;
+    left: 500px;*/
+    width: 100px;
+    height: 100px;
+    float: right;
     image-orientation: flip;
 }
 
