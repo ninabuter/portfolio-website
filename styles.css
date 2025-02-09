@@ -11,6 +11,11 @@ body {
     padding: 5px;
 }
 
+/*div {
+    width: 1000px;
+    margin: auto;
+}*/
+
 h1 {
     padding: 10px;
 }
@@ -19,7 +24,7 @@ h2 {
     padding: 30px;
 }
 
-p {
+.p-30 {
     padding: 30px;
 }
 
@@ -79,4 +84,22 @@ p {
     background-color: #ddd;
     color: black;
     border: 2px solid #f0bf6c;
+}
+
+
+/* Skills */
+.mycontainer {
+    background-color: #2a2d30;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.mycontainer div {
+    background-color: #3d3e42;
+    height: 100px;
+    width: 29%;
+    padding: 1%;
+    margin: 1%;
+    float: left;
 }
