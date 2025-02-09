@@ -100,6 +100,16 @@ h2 {
     height: 100px;
     width: 29%;
     padding: 1%;
+    padding-top: 25px;
     margin: 1%;
     float: left;
+    text-align: center;
+    border: 1px solid inherit;
+    border-radius: 10px;
 }
+
+.mycontainer div img {
+    width:40px;
+    height:40px;
+}
+

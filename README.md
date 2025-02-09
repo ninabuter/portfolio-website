@@ -1,2 +1,2 @@
-# first_website
-My first website
+# Portfolio
+My first html/css project ~ a portfolio website
