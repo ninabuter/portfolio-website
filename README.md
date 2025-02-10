@@ -1,2 +1,2 @@
 # Portfolio
-My first html/css project ~ a portfolio website
+My first HTML/CSS project ~ a portfolio website
