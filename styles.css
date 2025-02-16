@@ -1,4 +1,3 @@
-/* Global settings */
 html {
     height: 100%;
     width: 100%;
@@ -13,11 +12,6 @@ body {
     border: 2px solid #f0bf6c;
     padding: 5px;
 }
-
-/*div {
-    width: 1000px;
-    margin: auto;
-}*/
 
 h1 {
     padding: 20px;
@@ -42,6 +36,9 @@ h2 {
 .topnav {
     background-color: #2a2d30;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .topnav a {
@@ -63,16 +60,13 @@ h2 {
     color: black;
 }
 
-
 /* Hero image */
-#hero-image {
-/*    position: fixed;
-    top: 150px;
-    left: 500px;*/
-    width: 100px;
-    height: 100px;
-    float: right;
-    image-orientation: flip;
+.hero{
+    background-image: url("placeholder_person.png");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 300px 300px;
+    background-position: 80%;
 }
 
 /* Contact me-button */
