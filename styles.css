@@ -8,9 +8,9 @@ html {
 body {
     background-color: #2a2d30;
     color: white;
-    font-family: Menlo;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     border: 2px solid #f0bf6c;
-    padding: 5px;
+    padding: 5px 10%;
 }
 
 h1 {
@@ -62,7 +62,7 @@ h2 {
 
 /* Hero image */
 .hero{
-    background-image: url("placeholder_person.png");
+    background-image: url("images/placeholder_person.png");
     background-repeat: no-repeat;
     height: 300px;
     background-size: 300px 300px;
@@ -70,10 +70,15 @@ h2 {
 }
 
 /* Contact me-button */
+.contact_button{
+    padding-left: 30px;
+}
+
 .contact_button a:link, a:visited {
     background-color: #2a2d30;
     color: #f0bf6c;
-    border: 2px solid #f0bf6c;
+    border: 3px solid #f0bf6c;
+    border-radius: 5px;
     padding: 15px 25px;
     text-align: center;
     text-decoration: none;
@@ -83,7 +88,8 @@ h2 {
 .contact_button a:hover, a:active {
     background-color: #ddd;
     color: black;
-    border: 2px solid #f0bf6c;
+    border: 3px solid #ddd;
+    border-radius: 5px;
 }
 
 
@@ -117,4 +123,12 @@ h2 {
     height: 500px;
     width: 500px;
     border: none;
+}
+
+.footer {
+    background-color: #2a2d30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0bf6c;
 }
