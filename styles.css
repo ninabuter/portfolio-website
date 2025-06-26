@@ -68,7 +68,7 @@ h2 {
     background-position: 80%;
 }
 
-/* Contact me-button */
+/* Contact me button */
 .contact_button{
     padding-left: 30px;
 }
@@ -124,6 +124,8 @@ h2 {
     border: none;
 }
 
+
+/* Footer */
 .footer {
     background-color: #2a2d30;
     display: flex;
