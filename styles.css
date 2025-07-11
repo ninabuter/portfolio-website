@@ -15,23 +15,25 @@ body {
 
 h1 {
     padding: 20px;
+    text-align: center;
 }
 
 h2 {
     padding: 30px;
+    text-align: center;
 }
 
-
-/* Classes */
+/* General classes */
 .p-30 {
     padding: 30px;
 }
 
-.c-yellow {
+.highlight {
     color: #f0bf6c;
+    font-weight: bold;
 }
 
-/* Top navigation settings */
+/* Top navigation section */
 .topnav {
     background-color: #2a2d30;
     overflow: hidden;
@@ -59,13 +61,48 @@ h2 {
     color: black;
 }
 
-/* Hero image */
-.hero{
-    background-image: url("images/placeholder_person.png");
-    background-repeat: no-repeat;
-    height: 300px;
-    background-size: 300px 300px;
-    background-position: 80%;
+/* Hero section */
+.hero-wrapper {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.hero-img {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50% / 40%; /* Makes it oval */
+    border: 3px solid #f0bf6c;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hero-text p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
 }
 
 /* Contact me button */
@@ -90,6 +127,8 @@ h2 {
     border: 3px solid #ddd;
     border-radius: 5px;
 }
+
+/* About section*/
 
 
 /* Skills */
