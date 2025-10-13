@@ -3,6 +3,7 @@ html {
     width: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +26,14 @@ h2 {
 
 /* General classes */
 .p-30 {
+    padding: 30px;
+}
+
+.p-20 {
+    padding: 30px;
+}
+
+.p-10 {
     padding: 30px;
 }
 
@@ -96,12 +105,14 @@ h2 {
 
 .hero-text h1 {
     margin: 0;
+    padding: 0;
+    line-height: 1.2;
     font-size: 2em;
 }
 
 .hero-text p {
     margin: 0;
-    padding: 0;
+    padding: 5px;
     font-size: 1.2em;
 }
 
