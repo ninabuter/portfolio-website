@@ -12,4 +12,9 @@ else message = "Good evening \u{1F31D}";
 let greeting = document.getElementById("greeting")
 greeting.textContent = message;
 
+// Responsive image (would be fun!!)
+// const img = document.getElementById("profile");
+// img.addEventListener("mouseenter", () => img.src = "images/fun_photo.jpg");
+// img.addEventListener("mouseleave", () => img.src = "images/IMG_5342.jpg");
+
 // console.log("test")
