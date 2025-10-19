@@ -1,3 +1,15 @@
+/*
+CSS simple selectors:
+selector - example - explanation
+- #id - #firstname - Selects element with id="firstname"
+- .class - .intro - Selects all elements with class="intro"
+- * - * - Selects all elements
+- element name - p - Selects all <p> elements
+- element, element - p, h1 - Selects all <p> and <h1> elements
+*/
+
+/* HTML elements */
+
 html {
     height: 100%;
     width: 100%;
@@ -24,16 +36,10 @@ h2 {
     text-align: center;
 }
 
+/* Classes, IDs */
+
 /* General classes */
 .p-30 {
-    padding: 30px;
-}
-
-.p-20 {
-    padding: 30px;
-}
-
-.p-10 {
     padding: 30px;
 }
 
@@ -42,7 +48,7 @@ h2 {
     font-weight: bold;
 }
 
-/* Top navigation section */
+/* Class: Top navigation section */
 .topnav {
     background-color: #2a2d30;
     overflow: hidden;
@@ -51,7 +57,7 @@ h2 {
     align-items: center;
 }
 
-.topnav a {
+.topnav a { /* CSS combinator */
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -60,7 +66,7 @@ h2 {
     font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav a:hover { /* CSS pseudo-class */
     background-color: #ddd;
     color: black;
 }
@@ -70,7 +76,7 @@ h2 {
     color: black;
 }
 
-/* Hero section */
+/* Class: Hero section */
 .hero-wrapper {
     height: 40vh;
     display: flex;
@@ -88,12 +94,12 @@ h2 {
 }
 
 .hero-img {
-    width: 80%;
+    width: 100%;
     max-width: 200px;
     height: auto;
-    object-fit: cover;
+    /*object-fit: cover;*/
     border-radius: 50% / 40%; /* Makes it oval */
-    border: 3px solid #f0bf6c;
+    /*border: 3px solid #f0bf6c;*/
 }
 
 .hero-text {
@@ -117,7 +123,7 @@ h2 {
     font-size: 1.2em;
 }
 
-/* Contact me button */
+/* Class: Contact button */
 .contact_button{
     padding-left: 30px;
 }
@@ -148,18 +154,15 @@ h2 {
     border-radius: 5px;
 }
 
-/* About section*/
-
-
-/* Skills */
-.mycontainer {
+/* Class: Development skills section */
+.my-container {
     background-color: #2a2d30;
     width: 90%;
     overflow: hidden;
     margin: auto;
 }
 
-.mycontainer div {
+.my-container div {
     background-color: #3d3e42;
     height: 100px;
     width: 29%;
@@ -168,23 +171,30 @@ h2 {
     margin: 1%;
     float: left;
     text-align: center;
-    border: 1px solid inherit;
+    border: 1px solid #3d3e42;
     border-radius: 10px;
 }
 
-.mycontainer div img {
+.my-container div:hover {
+    background-color: #ddd;
+    color: #2a2d30;
+    /*border: 1px solid #ddd;*/
+}
+
+.my-container div img {
     width:40px;
     height:40px;
 }
 
-#iframe {
-    height: 500px;
-    width: 500px;
-    border: none;
+/* Class: Projects section */
+#projects{
+
 }
 
 
-/* Footer */
+
+
+/* Class: Footer */
 .footer {
     background-color: #2a2d30;
     display: flex;
@@ -194,29 +204,29 @@ h2 {
 }
 
 
-/* Media query for smaller screns*/
-@media (max-width: 700px) {
-    .hero {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+/* Media query for smaller screens*/
+/*@media (max-width: 700px) {*/
+/*    .hero {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*        text-align: center;*/
+/*    }*/
 
-    .hero-img {
-        max-width: 150px;
-        margin-bottom: 15px;
-    }
+/*    .hero-img {*/
+/*        max-width: 150px;*/
+/*        margin-bottom: 15px;*/
+/*    }*/
 
-    .contact_button {
-        padding-left: 0;
-        margin-top: 15px;
-    }
+/*    .contact_button {*/
+/*        padding-left: 0;*/
+/*        margin-top: 15px;*/
+/*    }*/
 
-    .hero-text h1 {
-        font-size: 1.5em;
-    }
+/*    .hero-text h1 {*/
+/*        font-size: 1.5em;*/
+/*    }*/
 
-    .hero-text p {
-        font-size: 1em;
-    }
-}
+/*    .hero-text p {*/
+/*        font-size: 1em;*/
+/*    }*/
+/*}*/
