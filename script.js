@@ -18,3 +18,17 @@ greeting.textContent = message;
 // img.addEventListener("mouseleave", () => img.src = "images/IMG_5342.jpg");
 
 // console.log("test")
+
+function navigation(a) {
+
+    let pageTopics = a.parentElement.children;
+    Array.from(pageTopics).forEach((child) => {
+        if (child != a) {
+            let href = child.getAttribute("href").substring(1);
+            document.getElementById(href).style.display = "none"
+        } else {
+            let href = a.getAttribute("href").substring(1);
+            document.getElementById(href).style.display = "block"
+        }
+    });
+}

@@ -26,6 +26,18 @@ body {
     padding: 5px 10%;
 }
 
+#about {
+    display: block;
+}
+
+#projects {
+    display: none;
+}
+
+#contact {
+    display: none;
+}
+
 h1 {
     padding: 20px;
     text-align: center;
@@ -160,14 +172,17 @@ a:active {
 }
 
 /* Class: Development skills section */
-.my-container {
+.skills_row_one,
+.skills_row_two {
     background-color: #2a2d30;
     width: 90%;
     overflow: hidden;
+    padding-left: 20px;
     margin: auto;
 }
 
-.my-container div {
+.skills_row_one div,
+.skills_row_two div {
     background-color: #3d3e42;
     height: 100px;
     width: 29%;
@@ -178,18 +193,23 @@ a:active {
     text-align: center;
     border: 1px solid #3d3e42;
     border-radius: 10px;
+    transition: background-color 1s, color 1s, transform 1s;
 }
 
-.my-container div:hover {
+.skills_row_one div:hover,
+.skills_row_two div:hover {
     background-color: #ddd;
     color: #2a2d30;
+    transform: scale(1.05, 1.05);
     /*border: 1px solid #ddd;*/
 }
 
-.my-container div img {
+.skills_row_one div img,
+.skills_row_two div img {
     width: 40px;
     height: 40px;
 }
+
 
 /* Class: Projects section */
 #projects {}

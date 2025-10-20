@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -10,107 +11,125 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
-<div class="topnav">
-    <a href="#about">About</a>
-<!--    add class="active" to color the button white-->
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-</div>
+    <div class="topnav">
+        <a href="#about" , onclick="navigation(this)">About</a>
+        <!--    add class="active" to color the button white-->
+        <a href="#projects" , onclick="navigation(this)">Experience</a>
+        <a href="#contact" , onclick="navigation(this)">Contact</a>
+    </div>
 
-<div class="hero-wrapper">
-    <div class="hero">
-        <img class="hero-img" src="images/CV_foto.jpg" alt="Nina Buter">
-        <div class="hero-text">
-            <h1 id="greeting"></h1>
-            <h1>I'm <span class="highlight">Nina Buter</span></h1>
-            <p>Graduated Bioinformatician and PhD <br> Candidate from the Netherlands </p>
-        </div>
-        <div class="contact_button">
-            <a href="mailto:ninabbuter@gmail.com">E-mail Contact</a>
+    <div class="hero-wrapper">
+        <div class="hero">
+            <img class="hero-img" src="images/CV_foto.jpg" alt="Nina Buter">
+            <div class="hero-text">
+                <h1 id="greeting"></h1>
+                <h1>I'm <span class="highlight">Nina Buter</span></h1>
+                <p>Graduated Bioinformatician and PhD <br> Candidate from the Netherlands </p>
+            </div>
+            <div class="contact_button">
+                <a href="mailto:ninabbuter@gmail.com">E-mail Contact</a>
+            </div>
         </div>
     </div>
-</div>
 
-<div>
-    <h1 id="about">About Me</h1>
-    <hr>
-    <p class="p-30" title="About"> I created this portfolio to improve my web development skills (HTML, CSS, and JavaScript).
-        Below, you can find some of the school and personal programming projects I worked on. Most are related to <span class="highlight">bioinformatics</span>,
-        <span class="highlight">data analysis</span>, and <span class="highlight">machine learning</span>, since these topics are my main interest. </p>
-    <h2 title="Academic Background">Academic Background</h2>
-    <p class="p-30" title="About">I completed two bachelor degrees, <span class="highlight">Biomedical Sciences</span>
-        and <span class="highlight">Musicology</span>, and a master's degree, <span class="highlight">Bioinformatics and Systems Biology</span>,
-        at the Vrije Universiteit van Amsterdam and the Universiteit van Amsterdam. During my bachelor internship at the Amsterdam
-        UMC, I got my first <span class="highlight">data analysis</span> experience during my internship at the Amsterdam UMC for BMS.
-        I gained bioinformatics experience during  my internship at the University Medical Center Utrecht at the Bioinformatics
-        department by integrating a <span class="highlight">metabolic data pipeline</span> with the workflow system Nextflow.</p>
-</div>
+    <div id="about">
+        <div>
+            <h1>About Me</h1>
+            <hr>
+            <p class="p-30" title="About"> I created this portfolio to improve my web development skills (HTML, CSS, and
+                JavaScript).
+                Below, you can find some of the school and personal programming projects I worked on. Most are related
+                to
+                <span class="highlight">bioinformatics</span>,
+                <span class="highlight">data analysis</span>, and <span class="highlight">machine learning</span>, since
+                these topics are my main interest.
+            </p>
+            <h2 title="Academic Background">Academic Background</h2>
+            <p class="p-30" title="About">I completed two bachelor degrees, <span class="highlight">Biomedical
+                    Sciences</span>
+                and <span class="highlight">Musicology</span>, and a master's degree, <span
+                    class="highlight">Bioinformatics
+                    and Systems Biology</span>,
+                at the Vrije Universiteit van Amsterdam and the Universiteit van Amsterdam. During my bachelor
+                internship at
+                the Amsterdam
+                UMC, I got my first <span class="highlight">data analysis</span> experience during my internship at the
+                Amsterdam UMC for BMS.
+                I gained bioinformatics experience during my internship at the University Medical Center Utrecht at the
+                Bioinformatics
+                department by integrating a <span class="highlight">metabolic data pipeline</span> with the workflow
+                system
+                Nextflow.</p>
+        </div>
 
-<div>
-    <h2 title="Development Skills">Development Skills</h2>
-    <div class="my-container">
         <div>
-            <img src="images/python.png" alt="python">
-            <p>Python</p>
-        </div>
-        <div>
-            <img src="images/r.png" alt="r">
-            <p>R</p>
-        </div>
-        <div>
-            <img src="images/html.png" alt="html">
-            <img src="images/css.png" alt="css">
-            <p>HTML & CSS</p>
+            <h2 title="Development Skills">Development Skills</h2>
+            <div class="skills_row_one">
+                <div>
+                    <img src="images/python.png" alt="python">
+                    <p>Python</p>
+                </div>
+                <div>
+                    <img src="images/r.png" alt="r">
+                    <p>R</p>
+                </div>
+                <div>
+                    <img src="images/html.png" alt="html">
+                    <img src="images/css.png" alt="css">
+                    <p>HTML & CSS</p>
+                </div>
+            </div>
+            <div class="skills_row_two">
+                <div>
+                    <img src="images/javascript.png" alt="javascript">
+                    <p>Javascript</p>
+                </div>
+                <div>
+                    <img src="images/nextflow.png" alt="nextflow">
+                    <p>Nextflow</p>
+                </div>
+                <div>
+                    <img src="images/git.png" alt="git">
+                    <img src="images/github.png" alt="github">
+                    <p>Git Source Control</p>
+                </div>
+            </div>
+            <br>
+            <br>
         </div>
     </div>
-    <div class="my-container">
-        <div>
-            <img src="images/javascript.png" alt="javascript">
-            <p>Javascript</p>
-        </div>
-        <div>
-            <img src="images/nextflow.png" alt="nextflow">
-            <p>Nextflow</p>
-        </div>
-        <div>
-            <img src="images/git.png" alt="git">
-            <img src="images/github.png" alt="github">
-            <p>Git Source Control</p>
+
+    <div id="projects">
+        <div class="proj-container">
+            <h1 title="Projects">Projects</h1>
+            <hr>
+            <div class="work-list">
+                <div class="work-itezm">
+                    <img class="work-img" src="images/spotify_2.jpeg" alt="project">
+                </div>
+                <div class="work-item">
+                    <img class="work-img" src="images/catboost.jpg" alt="project">
+                </div>
+                <div class="work-item">
+                    <img class="work-img" src="images/bioinformatics.jpg" alt="project">
+                </div>
+            </div>
         </div>
     </div>
-    <br>
-    <br>
-</div>
 
-<div id="projects">
-    <div class="proj-container">
-        <h1 title="Projects">Projects</h1>
+    <div class="Contact">
+        <h1 id="contact" title="Contact">Contact</h1>
         <hr>
-        <div class="work-list">
-            <div class="work-itezm">
-                <img class="work-img" src="images/spotify_2.jpeg" alt="project">
-            </div>
-            <div class="work-item">
-                <img class="work-img" src="images/catboost.jpg" alt="project">
-            </div>
-            <div class="work-item">
-                <img class="work-img" src="images/bioinformatics.jpg" alt="project">
-            </div>
-        </div>
+        <hr>
     </div>
-</div>
 
-<div class="Contact">
-    <h1 id="contact" title="Contact">Contact</h1>
-    <hr>
-    <hr>
-</div>
-
-<div class="footer">
-    <p>Thanks for scrolling! &#128513;</p>
-</div>
+    <div class="footer">
+        <p>Thanks for scrolling! &#128513;</p>
+    </div>
 
 </body>
+
 </html>
