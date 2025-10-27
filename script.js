@@ -1,7 +1,3 @@
-// First test to include an JS element in my portfolio
-// document.getElementById("date").textContent =
-//     "Today is " + new Date().toDateString();
-
 // Dynamic greeting
 const hour = new Date().getHours()
 let message;
@@ -19,11 +15,11 @@ greeting.textContent = message;
 
 // console.log("test")
 
+// Navigation
 function navigation(a) {
-
     let pageTopics = a.parentElement.children;
     Array.from(pageTopics).forEach((child) => {
-        if (child != a) {
+        if (child !== a) {
             let href = child.getAttribute("href").substring(1);
             document.getElementById(href).style.display = "none"
         } else {

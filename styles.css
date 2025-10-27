@@ -26,6 +26,18 @@ body {
     padding: 5px 10%;
 }
 
+h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    padding: 30px;
+    text-align: center;
+}
+
+/* IDs: specific elements*/
+
 #about {
     display: block;
 }
@@ -36,16 +48,6 @@ body {
 
 #contact {
     display: none;
-}
-
-h1 {
-    padding: 20px;
-    text-align: center;
-}
-
-h2 {
-    padding: 30px;
-    text-align: center;
 }
 
 /* Classes, IDs */
@@ -60,8 +62,8 @@ h2 {
     font-weight: bold;
 }
 
-/* Class: Top navigation section */
-.topnav {
+/* Class: Top navigation section using float */
+.nav {
     background-color: #2a2d30;
     overflow: hidden;
     display: flex;
@@ -69,9 +71,8 @@ h2 {
     align-items: center;
 }
 
-.topnav a {
-    /* CSS combinator */
-    float: left;
+.nav a { /* CSS combinator: all the links inside the nav element */
+    float: left; /* elements float next to each other */
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -79,13 +80,12 @@ h2 {
     font-size: 17px;
 }
 
-.topnav a:hover {
-    /* CSS pseudo-class */
+.nav a:hover { /* CSS pseudo-class */
     background-color: #ddd;
     color: black;
 }
 
-.topnav a.active {
+.nav a.active {
     background-color: #ddd;
     color: black;
 }
@@ -211,10 +211,7 @@ a:active {
 }
 
 
-/* Class: Projects section */
-#projects {
-    padding: 10px;
-}
+/* Class: Content projects section */
 
 .work-list {
     display: grid;
@@ -250,12 +247,20 @@ a:active {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
+    font-size: 14px;
 }
 
-/*.layer h3{*/
-/*    font-weight: 500;*/
-/*    margin-bottom: 20px;*/
-/*}*/
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer p{
+    /*text-align: center;*/
+    /*align-items: center;*/
+    justify-content: center;
+    width: 80%;
+}
 
 /* Class: Footer */
 .footer {
